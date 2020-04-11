@@ -1,0 +1,13 @@
+find * -type d -print0 | xargs -0 chmod 0755 # for directories permission
+find . -type f -print0 | xargs -0 chmod 0644 # for files permission
+
+find . -type f -size +1G #find files larger than 1 GB
+ 
+
+#For File transfer with ssh and sftp in Terminal -
+1.Connect SSh for server where file to be send exists
+2.inside the window connect sftp for the server where file is to be transferred
+3.Navigate to directory for Source server to where the file is using lcd command
+4.Navigate to directory for destination server to where file is to be uploaded using cd command
+5.Use put command - put <filename>
+6.Your transfer will start.
